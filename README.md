@@ -1,21 +1,20 @@
-# MusicWiki_Assessment
+# MusicWiki Android application assessment
 This repository contains the application given as an assessment during the GreedyGame Internship Interview
 
-# MusicWiki
-**Currency Converter** is application which fetches the realtime music genres, artists, albums, tracks and provides information on these.
+**Music Wiki** is application which fetches the realtime music genres, artists, albums, tracks and provides information on these.
 
 <table>
   <tr>
     <td> <img src="./Screenshots/1.png"  alt="1" width = 360px height = 800px ></td>
-    <td><img src="https://github.com/AdityaShidlyali/MusicWiki_Assessment/blob/main/Screenshots/2.png" alt="2" width = 360px height = 800px></td>
+    <td><img src="./Screenshots/2.png" alt="2" width = 360px height = 800px></td>
    </tr> 
    <tr>
-      <td><img src="https://github.com/AdityaShidlyali/MusicWiki_Assessment/blob/main/Screenshots/3.png" alt="3" width = 360px height = 800px></td>
-      <td><img src="https://github.com/AdityaShidlyali/MusicWiki_Assessment/blob/main/Screenshots/4.png" align="right" alt="4" width = 360px height = 800px>
+      <td><img src="./Screenshots/3.png" alt="3" width = 360px height = 800px></td>
+      <td><img src="./Screenshots/4.png" align="right" alt="4" width = 360px height = 800px>
   </td>
   </tr>
   <tr>
-      <td><img src="https://github.com/AdityaShidlyali/MusicWiki_Assessment/blob/main/Screenshots/5.png" alt="5" width = 360px height = 800px></td>
+      <td><img src="./Screenshots/5.png" alt="5" width = 360px height = 800px></td>
   </td>
   </tr>
 </table>
