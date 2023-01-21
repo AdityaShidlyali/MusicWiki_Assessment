@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Music Wiki</string>
+
+    <!--Material TextView strings-->
+    <string name="genres">Select Genres:</string>
+    <string name="app_pride">A music wikipedia</string>
+
+    <!--Material Button TextView string-->
+    <string name="more_genres">MORE</string>
+    <string name="less_genres">LESS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_album_details">AlbumDetailsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

@@ -1,0 +1,10 @@
+package com.adityamshidlyali.musicwiki.network
+
+/**
+ * Wrapper class for Retrofit response
+ * to handle the errors of network calls
+ */
+sealed class Resource<T>(val data: T?, val message: String?) {
+    class Success<T>(data: T) : Resource<T>(data, null)
+    class Error<T>(message: String) : Resource<T>(null, message)
+}
