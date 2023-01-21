@@ -18,6 +18,7 @@ This repository contains the application given as an assessment during the Greed
   </tr>
   <tr>
       <td><img src="./Screenshots/5.png" alt="5" width = 360px height = 800px></td>
+      <td><img src="./Screenshots/6.png" alt="5" width = 360px height = 800px></td>
   </td>
   </tr>
 </table>
