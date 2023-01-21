@@ -3,7 +3,7 @@ This repository contains the application given as an assessment during the Greed
 
 **Music Wiki** is application which fetches the realtime music genres, artists, albums, tracks and provides information on these.
 
-[![name](./Screenshots/download_apk_image.png)](./Music Wiki.apk)
+[![name](./Screenshots/download_apk_image.png)](./MusicWiki.apk)
 
 <table>
   <tr>
