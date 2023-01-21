@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.adityamshidlyali.musicwiki.R
+import com.adityamshidlyali.musicwiki.adapter.PagingLoadStateAdapter
 import com.adityamshidlyali.musicwiki.adapter.TagTracksItemAdapter
 import com.adityamshidlyali.musicwiki.databinding.FragmentTracksBinding
 import com.adityamshidlyali.musicwiki.viewmodel.TagTracksViewModel
@@ -50,7 +51,10 @@ class TracksFragment : Fragment() {
         binding.apply {
             rvTagTracks.layoutManager = GridLayoutManager(context, 2)
             rvTagTracks.setHasFixedSize(true)
-            rvTagTracks.adapter = adapter
+            rvTagTracks.adapter = adapter.withLoadStateHeaderAndFooter(
+                header = PagingLoadStateAdapter { adapter.retry() },
+                footer = PagingLoadStateAdapter { adapter.retry() }
+            )
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.adityamshidlyali.musicwiki.R
+import com.adityamshidlyali.musicwiki.adapter.PagingLoadStateAdapter
 import com.adityamshidlyali.musicwiki.adapter.TagArtistsItemAdapter
 import com.adityamshidlyali.musicwiki.databinding.FragmentArtistsBinding
 import com.adityamshidlyali.musicwiki.model.tagmodel.TagArtistInfo
@@ -54,7 +55,10 @@ class ArtistsFragment : Fragment(), TagArtistsItemAdapter.OnTrackItemClickListen
         binding.apply {
             rvTagArtists.layoutManager = GridLayoutManager(context, 2)
             rvTagArtists.setHasFixedSize(true)
-            rvTagArtists.adapter = adapter
+            rvTagArtists.adapter = adapter.withLoadStateHeaderAndFooter(
+                header = PagingLoadStateAdapter { adapter.retry() },
+                footer = PagingLoadStateAdapter { adapter.retry() }
+            )
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

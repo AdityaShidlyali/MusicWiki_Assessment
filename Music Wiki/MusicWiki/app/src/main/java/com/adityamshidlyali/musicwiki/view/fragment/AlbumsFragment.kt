@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.adityamshidlyali.musicwiki.R
+import com.adityamshidlyali.musicwiki.adapter.PagingLoadStateAdapter
 import com.adityamshidlyali.musicwiki.adapter.TagAlbumsItemAdapter
 import com.adityamshidlyali.musicwiki.databinding.FragmentAlbumsBinding
 import com.adityamshidlyali.musicwiki.model.tagmodel.TagAlbumInfo
@@ -53,7 +54,10 @@ class AlbumsFragment : Fragment(), TagAlbumsItemAdapter.OnAlbumItemClickListener
         binding.apply {
             rvTagAlbums.layoutManager = GridLayoutManager(context, 2)
             rvTagAlbums.setHasFixedSize(true)
-            rvTagAlbums.adapter = adapter
+            rvTagAlbums.adapter = adapter.withLoadStateHeaderAndFooter(
+                header = PagingLoadStateAdapter { adapter.retry() },
+                footer = PagingLoadStateAdapter { adapter.retry() }
+            )
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

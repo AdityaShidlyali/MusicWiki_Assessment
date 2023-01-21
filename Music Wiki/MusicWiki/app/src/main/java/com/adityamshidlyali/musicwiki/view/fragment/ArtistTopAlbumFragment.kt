@@ -11,6 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import com.adityamshidlyali.musicwiki.R
 import com.adityamshidlyali.musicwiki.adapter.ArtistTopAlbumsItemAdapter
+import com.adityamshidlyali.musicwiki.adapter.PagingLoadStateAdapter
 import com.adityamshidlyali.musicwiki.databinding.FragmentArtistTopAlbumBinding
 import com.adityamshidlyali.musicwiki.viewmodel.ArtistTopAlbumsViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -54,7 +55,10 @@ class ArtistTopAlbumFragment : Fragment() {
         binding.apply {
             rvArtistTopAlbums.layoutManager = GridLayoutManager(context, 2)
             rvArtistTopAlbums.setHasFixedSize(true)
-            rvArtistTopAlbums.adapter = adapter
+            rvArtistTopAlbums.adapter = adapter.withLoadStateHeaderAndFooter(
+                header = PagingLoadStateAdapter { adapter.retry() },
+                footer = PagingLoadStateAdapter { adapter.retry() }
+            )
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
