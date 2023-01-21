@@ -5,6 +5,7 @@ This repository contains the application given as an assessment during the Greed
 
 [![name](./Screenshots/download_apk_image.png)](./MusicWiki.apk)
 
+## Screenshots
 <table>
   <tr>
     <td> <img src="./Screenshots/1.png"  alt="1" width = 360px height = 800px ></td>
