@@ -42,7 +42,7 @@ This repository contains the application given as an assessment during the Greed
 - Primary language used is **Kotlin**
 - [Retrofit 2](https://square.github.io/retrofit/) - REST client for making network calls.
 - [Coroutines](https://developer.android.com/kotlin/coroutines) - For asynchronous operations.
-- [Paging3](https://developer.android.com/topic/libraries/architecture/paging/v3-migration) - For displaying the chunk of data from larger datasets over the network calls. Hence consuming less resources.
+- [Paging3 Library](https://developer.android.com/topic/libraries/architecture/paging/v3-migration) - For displaying the chunk of data from larger datasets over the network calls. Hence consuming less resources.
 - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Lifecycle aware library to manage data observing the lifecycle of licecycle owner.
 - [Hilt-Dagger](https://dagger.dev/hilt/) - Recommended Dependency Injection Framework for Android.
 - [Kotlin Flows](https://developer.android.com/kotlin/flow) - Emits sequence of values or data, and can be consumed or computed asynchronously.
