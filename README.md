@@ -6,7 +6,7 @@ This repository contains the application given as an assessment during the Greed
 
 <table>
   <tr>
-    <td> <img src="https://github.com/AdityaShidlyali/MusicWiki_Assessment/blob/main/Screenshots/1.png"  alt="1" width = 360px height = 640px ></td>
+    <td> <img src="./Screenshots/1.png"  alt="1" width = 360px height = 640px ></td>
     <td><img src="https://github.com/AdityaShidlyali/MusicWiki_Assessment/blob/main/Screenshots/2.png" alt="2" width = 360px height = 640px></td>
    </tr> 
    <tr>
