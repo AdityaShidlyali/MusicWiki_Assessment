@@ -36,7 +36,7 @@ This repository contains the application given as an assessment during the Greed
 * viewmodel
 
 ## The project follows the following architecture
-<img src="https://github.com/AdityaShidlyali/CurrencyConverterApp/blob/main/images/mvvm.png" />
+<img src="./Screenshots/mvvm.png" />
 
 ## Tech stack used
 - Primary language used is Kotlin
