@@ -39,7 +39,7 @@ This repository contains the application given as an assessment during the Greed
 <img src="./Screenshots/mvvm.jpg" />
 
 ## Tech stack used
-- Primary language used is Kotlin
+- Primary language used is **Kotlin**
 - [Retrofit 2](https://square.github.io/retrofit/) - REST client for making network calls.
 - [Coroutines](https://developer.android.com/kotlin/coroutines) - For asynchronous operations.
 - [Paging3](https://developer.android.com/topic/libraries/architecture/paging/v3-migration) - For displaying the chunk of data from larger datasets over the network calls. Hence consuming less resources.
