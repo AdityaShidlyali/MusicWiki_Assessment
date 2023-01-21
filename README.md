@@ -36,7 +36,7 @@ This repository contains the application given as an assessment during the Greed
 * viewmodel
 
 ## The project follows the following architecture
-<img src="./Screenshots/mvvm.png" />
+<img src="./Screenshots/mvvm.jpg" />
 
 ## Tech stack used
 - Primary language used is Kotlin
