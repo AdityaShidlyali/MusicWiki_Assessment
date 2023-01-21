@@ -19,7 +19,7 @@
             android:fitsSystemWindows="true"
             app:contentScrim="@color/purple_700"
             app:expandedTitleTextAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded"
-            app:layout_scrollFlags="scroll"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
             app:titleEnabled="false">
 
             <LinearLayout
